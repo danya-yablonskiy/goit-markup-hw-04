@@ -79,8 +79,37 @@ ul {
   margin-left: auto;
 }
 
-.email.email-footer {
+.email.email-header {
+  display: flex;
   margin-right: 50px;
+  align-items: center;
+}
+
+.svg-email{
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.svg-email:hover{
+ color: var(--color-hover-logo-button);
+}
+
+.tel-header{
+  display: flex;
+  align-items: center;
+}
+
+.svg-tel{
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.svg-tel:hover{
+  color: var(--color-hover-logo-button);
 }
 
 .container {
@@ -153,6 +182,10 @@ h3 {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
   }
 
 .footer {
@@ -372,3 +405,4 @@ h3 {
   border-left: 1px solid #EEEEEE;
   padding: 20px 24px;
 }
+
