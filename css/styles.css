@@ -80,7 +80,7 @@ ul {
 }
 
 .email.email-header {
-  display: flex;
+  display: inline-flex;
   margin-right: 50px;
   align-items: center;
 }
@@ -90,6 +90,7 @@ ul {
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
+  align-items: center;
 }
 
 .svg-email:hover{
@@ -97,11 +98,12 @@ ul {
 }
 
 .tel-header{
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
 .svg-tel{
+    align-items: center;
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -222,6 +224,7 @@ h3 {
 .text {
   font-size: 14px;
   line-height: 1.7;
+  width: 270px;
 }
 
 /* Е-мейл, пошта, навігація для "Студія" */
@@ -259,6 +262,7 @@ h3 {
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 10px;
+  width: 270px;
 }
 
 .person-names {
@@ -270,7 +274,7 @@ h3 {
 .profession {
   font-size: 16px;
   line-height: 1.19;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 /* Кнопка (Cтудія)*/
@@ -406,3 +410,53 @@ h3 {
   padding: 20px 24px;
 }
 
+.svg-decisions-box{
+  height: 120px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.decisions-all-svg{
+  width: 70px;
+  height: 70px;
+}
+
+.social-links-box{
+  margin-left: auto;
+  margin-right: auto;
+  width: 206px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.social-links{
+   display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.social-links:hover{
+  background-color: var(--color-hover-logo-button);
+}
+
+.social-links:not(:first-child){
+  margin-left: 10px;
+}
+
+.icon-socials{
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8; 
+}
+
+.icon-socials:hover{
+  fill: var(--primary-white-color);
+}
