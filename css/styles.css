@@ -85,33 +85,9 @@ ul {
   align-items: center;
 }
 
-.svg-email{
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
-  align-items: center;
-}
-
-.svg-email:hover{
- color: var(--color-hover-logo-button);
-}
-
 .tel-header{
   display: inline-flex;
   align-items: center;
-}
-
-.svg-tel{
-    align-items: center;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.svg-tel:hover{
-  color: var(--color-hover-logo-button);
 }
 
 .container {
@@ -172,7 +148,8 @@ img {
 }
 
 h2,
-h3 {
+.person-names,
+.title-list{
   color: var(--accent-color);
 }
 
@@ -410,6 +387,37 @@ h3 {
   padding: 20px 24px;
 }
 
+
+/* Робота з svg */
+
+/* Конверт і телефон в хедері */
+
+.svg-email{
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+  align-items: center;
+}
+
+.svg-email:hover{
+ color: var(--color-hover-logo-button);
+}
+
+.svg-tel{
+    align-items: center;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.svg-tel:hover{
+  color: var(--color-hover-logo-button);
+}
+
+/* Рішення */
+
 .svg-decisions-box{
   height: 120px;
   display: inline-flex;
@@ -417,6 +425,7 @@ h3 {
   align-items: center;
   padding: 25px 100px;
   margin-bottom: 30px;
+  background-color: #F5F4FA;
 }
 
 .decisions-all-svg{
@@ -424,6 +433,7 @@ h3 {
   height: 70px;
 }
 
+/* Соц.мережі */
 .social-links-box{
   margin-left: auto;
   margin-right: auto;
@@ -435,7 +445,7 @@ h3 {
 }
 
 .social-links{
-   display: flex;
+  display: flex;
   width: 44px;
   height: 44px;
   justify-content: center;
@@ -445,18 +455,46 @@ h3 {
 
 .social-links:hover{
   background-color: var(--color-hover-logo-button);
+  fill: var(--primary-white-color);
+}
+
+.icon-socials{
+  width: 20px;
+  height: 20px;
 }
 
 .social-links:not(:first-child){
   margin-left: 10px;
 }
 
-.icon-socials{
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8; 
+
+/* Постійні клієнти */
+
+.regular-customers-list{
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.icon-socials:hover{
-  fill: var(--primary-white-color);
+.customers-link{
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
 }
+
+.customers-svg{
+  width: 106px;
+  height: 60px;
+}
+
+.customers-link:hover{
+ border-color: var(--color-hover-logo-button);
+ fill: var(--color-hover-logo-button);
+}
+
+/* Соц.мережі футер */
