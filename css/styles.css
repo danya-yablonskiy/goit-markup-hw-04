@@ -86,8 +86,9 @@ ul {
 }
 
 .tel-header{
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -393,8 +394,6 @@ h2,
 /* Конверт і телефон в хедері */
 
 .svg-email{
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: currentColor;
   align-items: center;
@@ -405,9 +404,7 @@ h2,
 }
 
 .svg-tel{
-    align-items: center;
-  width: 10px;
-  height: 16px;
+  align-items: center;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -455,12 +452,16 @@ h2,
 
 .social-links:hover{
   background-color: var(--color-hover-logo-button);
+}
+
+.social-links:hover .icon-socials{
   fill: var(--primary-white-color);
 }
 
 .icon-socials{
   width: 20px;
   height: 20px;
+  fill: #AFB1B8;
 }
 
 .social-links:not(:first-child){
@@ -490,11 +491,45 @@ h2,
 .customers-svg{
   width: 106px;
   height: 60px;
+  fill: #AFB1B8;
 }
 
 .customers-link:hover{
  border-color: var(--color-hover-logo-button);
- fill: var(--color-hover-logo-button);
 }
 
+.customers-link:hover .customers-svg{
+  fill: var(--color-hover-logo-button);
+}
 /* Соц.мережі футер */
+
+.social-links-box-footer{
+  width: 206px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.join-word{
+display: inline-block;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+.social-links-footer{
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.social-icon-box-footer{
+ padding-top: 12px;
+  margin-left: 70px;
+}
+
+.container-footer{
+  display: flex;
+}
