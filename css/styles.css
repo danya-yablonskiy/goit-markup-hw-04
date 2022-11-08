@@ -12,6 +12,7 @@ body {
   --color-hover-logo-button: rgba(33, 150, 243, 1);
   --color-background-footer: rgba(47, 48, 58, 1);
   --color-background-button-portfolio: rgb(245, 244, 250); 
+  --fill-for-svg: rgb(175, 177, 184);
 }
 
 /* Щоб не було випадання */
@@ -320,7 +321,7 @@ h2,
 }
 
 .our-team{
-  background-color: #F5F4FA;
+  background-color: var(--color-background-button-portfolio);
 }
 
 
@@ -388,7 +389,7 @@ h2,
 }
 
 .description{
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
   padding: 20px 24px;
@@ -427,7 +428,7 @@ h2,
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  background-color: #F5F4FA;
+  background-color: var(--color-background-button-portfolio);
 }
 
 .decisions-all-svg{
@@ -458,7 +459,7 @@ h2,
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: #AFB1B8;
+  color: var(--fill-for-svg);
 }
 
 .icon-socials{
@@ -470,7 +471,7 @@ h2,
 .social-links:hover,
 .social-links:focus{
   background-color: var(--color-hover-logo-button);
-  color: #ffffff; 
+  color: var(--primary-white-color); 
 }
 
 .social-links:not(:first-child){
@@ -500,7 +501,7 @@ h2,
   align-items: center;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
-  color: #AFB1B8;
+  color: var(--fill-for-svg);
 }
 
 .customers-svg{
@@ -552,11 +553,12 @@ margin-left: 70px;
 /* Ховер для карточок в Портфоліо */
 
 .link-portfolio-card{
+  display: block;
   text-decoration: none;
   color: var(--accent-color);
 }
 
-.imgs-box-portfolio:hover,
-.imgs-box-portfolio:focus{
+.link-portfolio-card:hover,
+.link-portfolio-card:focus{
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
